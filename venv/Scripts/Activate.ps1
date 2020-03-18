@@ -27,7 +27,7 @@ function global:deactivate ([switch]$NonDestructive) {
 
 deactivate -nondestructive
 
-$env:VIRTUAL_ENV="C:\Users\volan\Desktop\Курс\B4.12\venv"
+$env:VIRTUAL_ENV="C:\Repository\SkillFactory-B4-SQLAlchemy\venv"
 
 if (! $env:VIRTUAL_ENV_DISABLE_PROMPT) {
     # Set the prompt to include the env name

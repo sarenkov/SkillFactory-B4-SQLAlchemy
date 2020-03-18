@@ -4,6 +4,7 @@ from connector.db_connector import DbConnector
 
 Base = declarative_base()
 
+
 class User(Base):
     __tablename__ = 'user'
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -17,13 +18,13 @@ class User(Base):
 
 def user_register():
     user = User()
-    print('Для регистрации нужны ваши данные')
-    user.first_name = input('Напишите свое имя: ')
-    user.last_name = input('Теперь свою фамилию: ')
-    user.gender = input('Вы мужчина или женщина? ')
-    user.email = input('Так же нужнен ваш email: ')
-    user.birthdate = input('Напишите свою дату рождения: ')
-    user.height = input('Ну и рост уже: ')
+    print('Для регистрации нужны ваши данные') or ''
+    user.first_name = input('Напишите свое имя: ') or ''
+    user.last_name = input('Теперь свою фамилию: ') or ''
+    user.gender = input('Вы мужчина или женщина? ') or ''
+    user.email = input('Так же нужнен ваш email: ') or ''
+    user.birthdate = input('Напишите свою дату рожденияб в формате 1900-01-01: ') or ''
+    user.height = input('Ну и рост уже, в формате 1.71: ') or 0
     print('Данные были учтены. Начинаю регистрацию...')
     return user
 

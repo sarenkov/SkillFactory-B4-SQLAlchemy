@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm.session import sessionmaker
 
 class DbConnector():
-    __db_connection_string = 'sqlite:///sochi_athletes.sqlite3'
+    __db_connection_string = 'sqlite:///../sochi_athletes.sqlite3'
     __engine: None
 
     def __init__(self):

@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\volan\Desktop\Курс\B4.12\venv"
+VIRTUAL_ENV="C:\Repository\SkillFactory-B4-SQLAlchemy\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
